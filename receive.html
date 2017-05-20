@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>intouch</title>
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="apple-mobile-web-app-title" content="intouch">
+	<link rel="apple-touch-icon" href="assets/images/intouch_logo.png">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="favicon.ico"> -->
+
+	<link rel="stylesheet" href="dist/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="dist/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/vader/jquery-ui.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	
+</head>
+<body class="main-gray">
+
+<header class="main-header header-gray">
+	<h2>Receiving</h2>
+</header>
+<main class="main-content main-gray home-content">
+
+	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators carousel-dot">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+	        <div class="main-card blair-work receive-card" id="main-card" card-value="work" data-id="1">
+	        	<img class="avatar" src="upload/avatar/blair/work.png" alt="work">
+	        	<ul class="btn-reveive">
+	        		<li><button class="btn-receive-note"><img src="assets/images/app/btn-receive-note.png" alt="receive-note"></button></li>
+	        		<li><button class="btn-receive-del"><img src="assets/images/app/btn-receive-del.png" alt="receive-del"></button></li>
+	        	</ul>
+	            <div class="card-info card-info-receive" card-value="work" data-id="1">
+					<h3 class="owner-name">Blair Hartman</h3>
+					<ul class="card-info-label">
+						<li class="labels"><img src="assets/images/app/label-location.png" alt="receive-location">San Francisco Opera</li>
+						<li class="labels"><img src="assets/images/app/label-time.png" alt="receive-time">Met today</li>
+						<li class="labels labels-note"><img src="assets/images/app/label-note.png" alt="receive-note"><span></span></li>
+					</ul>
+				</div>
+				<div class="input-note" style="display: none;">
+					<div class="labels"><img src="assets/images/app/label-note.png" alt="receive-location">Note</div>
+					<textarea></textarea>
+					<a href="#" class="btn-share btn-note-save">Save</a>
+				</div>
+				
+			</div>
+          </div>
+          <div class="item">
+	        <div class="main-card aki-friend receive-card" id="main-card" card-value="friend" data-id="2">
+	        	<img class="avatar" src="upload/avatar/aki/bff.png" alt="friend">
+	        	<ul class="btn-reveive">
+	        		<li><button class="btn-receive-note"><img src="assets/images/app/btn-receive-note.png" alt="receive-note"></button></li>
+	        		<li><button class="btn-receive-del"><img src="assets/images/app/btn-receive-del.png" alt="receive-del"></button></li>
+	        	</ul>
+	            <div class="card-info card-info-receive" card-value="friend" data-id="2">
+					<h3 class="owner-name">Aki</h3>
+					<ul class="card-info-label">
+						<li class="labels"><img src="assets/images/app/label-location.png" alt="receive-location">San Francisco Opera</li>
+						<li class="labels"><img src="assets/images/app/label-time.png" alt="receive-time">Met today</li>
+						<li class="labels labels-note"><img src="assets/images/app/label-note.png" alt="receive-note"><span></span></li>
+					</ul>
+				</div>
+				<div class="input-note" style="display: none;">
+					<div class="labels"><img src="assets/images/app/label-note.png" alt="receive-location">Note</div>
+					<textarea></textarea>
+					<a href="#" class="btn-share btn-note-save">Save</a>
+				</div>
+				
+			</div>
+          </div>
+        
+      </div>
+
+	<div class="cards main-gray receive-group" style="touch-action: pan-y; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+		<ul>
+			<li data-value="favorites">Favorites</li>
+			<li data-value="friend">Friend</li>
+			<li data-value="client">Client</li>
+			<li data-value="model">Model</li>
+		</ul>
+	</div>
+</main>
+<nav class="main-nav">
+	<ul>
+		<li><a href="home_1.html" class="nav-my-cards">My cards</a></li>
+		<li><a href="contacts.html" class="nav-contacts">Contacts</a></li>
+		<li><a href="receive.html" class="nav-receiving actived">Receiving</a></li>
+		<li><a href="nearby.html" class="nav-nearby">Nearby</a></li>
+	</ul>
+</nav>
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets/js/jquery.min.js"><\/script>')</script>
+<script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
+<script src="dist/js/bootstrap.min.js"></script>
+<script src="dist/js/hammer.min.js"></script>
+<script src="dist/js/hammer-time.min.js"></script>
+<script src="dist/js/jquery.ui.touch-punch.min.js"></script>
+<script src="assets/js/handle-receive.js"></script>
+<!-- <script src="assets/js/index.js"></script> -->
+
+<script>  
+	$('.carousel').carousel({
+	  interval: false
+	})
+	var mcard = new Hammer( $( ".carousel-inner" )[0], {
+      domEvents: true
+    } );
+    
+    mcard.get('swipe').set({ direction: Hammer.DIRECTION_HORIZONTAL });
+    
+    $('.carousel-inner').on('swipeleft', function(){
+    	// console.log(1);
+        $('.carousel').carousel('next'); 
+      })
+	$('.carousel-inner').on('swiperight', function(){
+		// console.log(2);
+		$('.carousel').carousel('prev'); 
+	})
+
+</script>
+</html>

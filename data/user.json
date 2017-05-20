@@ -1,0 +1,43 @@
+{"user": [
+	{
+		"id": "1",
+		"firstname": "Lillie",
+		"lastname": "Cole",
+		"avatar": "lillie/friend.png",
+		"occupation": "Photographer",
+		"company": "White Room",
+		"phone": [
+			{
+				"type": "Mobile",
+				"phone": "(415) 806-9444"
+			},
+			{
+				"type": "Business",
+				"phone": "(415) 968-4216"
+			}
+		],
+		"email": [
+			{
+				"type": "Business",
+				"email": "clillie@whiteroom.com"
+			}
+		],
+		"social": [
+			{
+				"social": "Facebook",
+				"icon": "assets/images/social/fb.png",
+				"name": "lilliecole",
+				"link": "https://www.facebook.com"
+			},
+			{
+				"social": "Instagram",
+				"icon": "assets/images/social/ig.png",
+				"name": "lillieshot",
+				"link": "https://www.instagram.com"
+			}
+		] 
+	}
+]
+
+
+	

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>intouch</title>
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="apple-mobile-web-app-title" content="intouch">
+	<link rel="apple-touch-icon" href="assets/images/intouch_logo.png">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="favicon.ico"> -->
+
+	<link rel="stylesheet" href="dist/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="dist/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="dist/css/bootstrap-switch.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	
+</head>
+<body>
+
+<header class="main-header header-green">
+	<a href="add.html" class="btn-header-left btn-back"><img src="assets/images/app/btn-back.png" alt="btn-back"></a>
+	<h2>Information</h2>
+	<a href="#" class="btn-header-right" id="submit-form">Next</a>
+</header>
+<main class="main-content">
+	<div class="card-detail">
+		<a href="#" class="scan-card btn-green-round">Scan business card</a>
+		<div class="clearfix photo-row">
+		
+			<form action="" method="post" enctype="multipart/form-data" class="add-photo">
+				<img class="image-preview" src="assets/images/app/add-photo.png" />
+				<button class="click-upload-file"></button>
+				<input class="input-upload-file" type="file" name="file" style="display: none;" />
+				
+				<input type="submit" value="Upload" class="submit" id="submit-img" style="display: none;"/>
+			</form>
+			<div id="message" style="display: none;"></div>
+			<ul class="cards-detail-list new-card">
+				<li><span class="preset-span">First name</span><input type="text" id="first-name"></li>
+				<li><span class="preset-span">Last name</span><input type="text" id="last-name"></li>
+				<li><span class="preset-span">Nickname</span><input type="text" id="nickname"></li>
+			</ul>
+		</div>
+		
+		<ul class="cards-detail-list new-card">
+			<li><span class="preset-span">Occupation</span><input type="text" id="occupation"></li>
+			<li><span class="preset-span">Company</span><input type="text" id="company"></li>
+		</ul>
+
+		<ul class="cards-detail-list new-card">
+			<li>
+				<div class="preset-span new-card-add">
+					<img class="preset-span-icon" src="assets/images/app/new-card-add.png"><span class="preset-span-text" span-value-focus="Phone" span-value-blur="add phone">add phone</span>
+				</div>
+				<div class="add-list-focus">
+					<div class="new-card-del">
+						<img src="assets/images/app/new-card-del.png" class="new-card-del-icon">
+						<select class="new-card-del-text">
+							<option value="Mobile" selected="selected">Mobile</option>
+							<option value="Business">Business</option>
+						</select>
+					</div>
+					<input type="text" class="add-list" id="phone">
+					<div class="switch-btn"><input type="checkbox" name="btn-switch" class="btn-switch" checked></div>
+				</div>
+				<div class="after-span new-card-add clearfix" style="display: none;">
+					<img class="after-span-icon" src="assets/images/app/new-card-add.png"><span class="after-span-text">add phone</span>
+					<div class="switch-btn"><input type="checkbox" name="btn-switch" checked></div>
+				</div>
+			</li>
+
+			<li>
+				<div class="preset-span new-card-add">
+					<img class="preset-span-icon" src="assets/images/app/new-card-add.png"><span class="preset-span-text" span-value-focus="Email" span-value-blur="add email">add email</span>
+				</div>
+				<div class="add-list-focus">
+					<div class="new-card-del">
+						<img src="assets/images/app/new-card-del.png" class="new-card-del-icon">
+						<select class="new-card-del-text">
+							<option value="Mobile" selected="selected">Personal</option>
+							<option value="Business">Business</option>
+						</select>
+					</div>
+					<input type="text" class="add-list" id="email">
+					<div class="switch-btn"><input type="checkbox" name="btn-switch" class="btn-switch" checked></div>
+				</div>
+				<div class="after-span new-card-add clearfix" style="display: none;">
+					<img class="after-span-icon" src="assets/images/app/new-card-add.png"><span class="after-span-text">add email</span>
+					<div class="switch-btn"><input type="checkbox" name="btn-switch" class="btn-switch" checked></div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</main>
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets/js/jquery.min.js"><\/script>')</script>
+<script src="dist/js/bootstrap.min.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+<script src="assets/js/uploaddata.js"></script>
+<script src="assets/js/uploadimg.js"></script>
+<script src="assets/js/index.js"></script>
+<script src="dist/js/bootstrap-switch.min.js"></script>
+<script>
+	$.fn.bootstrapSwitch.defaults.size = 'mini';
+	$.fn.bootstrapSwitch.defaults.onText = 'I';
+	$.fn.bootstrapSwitch.defaults.offText = 'O';
+	$.fn.bootstrapSwitch.defaults.onColor = 'success';
+	$.fn.bootstrapSwitch.defaults.handleWidth = '10';
+	$.fn.bootstrapSwitch.defaults.labelWidth = '10';
+	$("[name='btn-switch']").bootstrapSwitch();
+</script>
+
+
+
+
+</html>

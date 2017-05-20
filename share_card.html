@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>intouch</title>
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="apple-mobile-web-app-title" content="intouch">
+	<link rel="apple-touch-icon" href="assets/images/intouch_logo.png">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="favicon.ico"> -->
+
+	<link rel="stylesheet" href="dist/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="dist/css/bootstrap-theme.min.css">
+
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	
+</head>
+<body>
+
+<header class="main-header header-green">
+	<a href="home_1.html" class="btn-header-left btn-back"><img src="assets/images/app/btn-back.png" alt="btn-back"></a>
+	<h2>Share</h2>
+	
+</header>
+<main class="main-content">
+	<div class="share-qrcode">
+		<div class="share-select">
+		  <select>
+		    <option>Work</option>
+		    <option>Friend</option>
+		  </select>
+		</div>
+		<div class="qrcode" id="qrcode">
+		</div>
+		<a href="#" class="scan-qrcode btn-green-round">Scan QR Code</a>
+	</div>
+	<div class="divided-line-or clearfix">
+		<p>OR</p>
+	</div>
+	<div class="bump">
+		<img src="assets/images/app/qrcode_t.png" alt="qrcode_t">
+	</div>
+	
+</main>
+<nav class="main-nav">
+	<ul>
+		<li><a href="home_1.html" class="nav-my-cards actived">My cards</a></li>
+		<li><a href="contacts.html" class="nav-contacts">Contacts</a></li>
+		<li><a href="receive.html" class="nav-receiving">Receiving</a></li>
+		<li><a href="nearby.html" class="nav-nearby">Nearby</a></li>
+	</ul>
+</nav>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets/js/jquery.min.js"><\/script>')</script>
+<script src="dist/js/bootstrap.min.js"></script>
+<script src="dist/js/qrcode.min.js"></script>
+<script src="assets/js/index.js"></script>
+
+<script type="text/javascript">
+var qrcode = new QRCode(document.getElementById("qrcode"), {
+	width : 150,
+	height : 150
+});
+function makeCode () {		
+	var elText = $('.share-select select').val();
+
+	qrcode.makeCode(elText);
+}
+
+makeCode();
+
+
+$('.share-select select').change(function(event) {
+	/* Act on the event */
+	makeCode();
+});
+</script>
+</html>

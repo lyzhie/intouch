@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>intouch</title>
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="apple-mobile-web-app-title" content="intouch">
+	<link rel="apple-touch-icon" href="assets/images/intouch_logo.png">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="favicon.ico"> -->
+
+	<link rel="stylesheet" href="dist/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="dist/css/bootstrap-theme.min.css">
+
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	
+</head>
+<body>
+
+<div class="login">
+	<div class="quickstart-user-details-container" style="display: none;">
+	    Firebase sign-in status: <span id="quickstart-sign-in-status">Unknown</span>
+	    <div>Firebase auth <code>currentUser</code> object value:</div>
+	    <pre><code id="quickstart-account-details">null</code></pre>
+	    <div>Facebook OAuth Access Token:</div>
+	    <pre><code id="quickstart-oauthtoken">null</code></pre>
+	</div>
+	<div class="slogan">
+		<div class="slogan-line"></div>
+		<p class="slogan">New way to keep in touch</p>
+	</div>
+	
+	<div class="login-option hide">
+		<ul>
+			<li><button>Log in with LinkedIn</button></li>
+			<li><button id="quickstart-sign-in">Log in with Facebook</button></li>
+		</ul>
+	</div>
+</div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets/js/jquery.min.js"><\/script>')</script>
+<script src="dist/js/bootstrap.min.js"></script>
+<script src="assets/js/index.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBZ5Q4IorCqjW31lCBncvqs7_IGM0r0k0w",
+    authDomain: "intouch-a6d96.firebaseapp.com",
+    databaseURL: "https://intouch-a6d96.firebaseio.com",
+    storageBucket: "intouch-a6d96.appspot.com",
+    messagingSenderId: "1028992775415"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="assets/js/fb-firebase-login.js"></script>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>intouch</title>
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="apple-mobile-web-app-title" content="intouch">
+	<link rel="apple-touch-icon" href="assets/images/intouch_logo.png">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="favicon.ico"> -->
+
+	<link rel="stylesheet" href="dist/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="dist/css/bootstrap-theme.min.css">
+
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	
+</head>
+<body>
+
+<header class="main-header header-green">
+	<a href="receive.html" class="btn-header-left btn-back"><img src="assets/images/app/btn-back.png" alt="btn-back"></a>
+	<h2>My cards</h2>
+	<a href="#" class="btn-header-right">Edit</a>
+</header>
+<main class="main-content">
+	<div class="card-detail">
+		<div class="card-photo">
+			<img class="owner-avatar" src="" alt="">
+			<h3 class="owner-name name-detail">Lillie Cole</h3>
+		</div>
+
+		<ul class="cards-detail-list">
+			<li><span>Occupation</span><p class="occupation"></p></li>
+			<li><span>Company</span><p class="company"></p></li>
+			<li class="divide-line"></li>
+		</ul>
+	</div>
+</main>
+<nav class="main-nav">
+	<ul>
+		<li><a href="home_1.html" class="nav-my-cards">My cards</a></li>
+		<li><a href="contacts.html" class="nav-contacts">Contacts</a></li>
+		<li><a href="receive.html" class="nav-receiving actived">Receiving</a></li>
+		<li><a href="nearby.html" class="nav-nearby">Nearby</a></li>
+	</ul>
+</nav>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets/js/jquery.min.js"><\/script>')</script>
+<script src="dist/js/bootstrap.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+<script src="assets/js/card-detail-firebase.js"></script>
+</html>

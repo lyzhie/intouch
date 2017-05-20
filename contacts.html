@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>intouch</title>
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="intouch">
+    <link rel="apple-touch-icon" href="assets/images/intouch_logo.png">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="favicon.ico"> -->
+
+	<link rel="stylesheet" href="dist/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="dist/css/bootstrap-theme.min.css">
+
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	
+</head>
+<body>
+
+<header class="main-header header-green">
+	<h2>Contacts</h2>
+</header>
+
+<ul class="header-with-nav header-green nav nav-tabs" role="tablist">
+	<li role="presentation" class="active"><a href="#az" aria-controls="A-Z" role="tab" data-toggle="tab">A-Z</a></li>
+	<li role="presentation"><a href="#frequency" aria-controls="frequency" role="tab" data-toggle="tab">FREQUENCY</a></li>
+	<li role="presentation"><a href="#datemet" aria-controls="datemet" role="tab" data-toggle="tab">DATE MET</a></li>
+</ul>
+<main class="main-content contect-with-nav tab-content">
+	<div role="tabpanel" class="tab-pane active" id="az">
+    	<div class="contacts-list">
+    		<div class="contacts-list-main clearfix">
+    			<div class="swipe-group">
+                    <div>
+                        <ul>
+                            <li class="group-contact"><a href="#" class="group-contact-all"><img src="assets/images/contact/group-contact/all.png" alt="all"></a></li>
+                            <li class="group-contact"><a href="#" class="group-contact-favorites"><img src="assets/images/contact/group-contact/favorites.png" alt="favorites"></a></li>
+                            <li class="group-contact"><a href="#" class="group-contact-friend"><img src="assets/images/contact/group-contact/friend.png" alt="friend"></a></a></li>
+                            <li class="group-contact"><a href="#" class="group-contact-client"><img src="assets/images/contact/group-contact/client.png" alt="client"></a></a></li>
+                            <li class="group-contact"><a href="#" class="group-contact-model"><img src="assets/images/contact/group-contact/model.png" alt="model"></a></a></li>
+                            <li class="group-contact"><a href="#" class="group-contact-bff"><img src="assets/images/contact/group-contact/bff.png" alt="bff"></a></a></li>
+                        </ul>
+                    </div>
+    				<a href="#" class="btn-edit"><img src="assets/images/app/btn-edit.png" alt="btn-edit"></a>
+    			</div>
+                <ul class="contacts-inner-list" id="contacts-list"></ul>
+            </div>
+
+            <ul class="alphabet-list">
+                <li class="toA">A</li>
+                <li class="toB">B</li>
+                <li class="toC">C</li>
+                <li class="toD">D</li>
+                <li class="toE">E</li>
+                <li class="toF">F</li>
+                <li class="toG">G</li>
+                <li class="toH">H</li>
+                <li class="toJ">J</li>
+                <li class="toK">K</li>
+                <li class="toL">L</li>
+                <li class="toM">M</li>
+                <li class="toN">N</li>
+                <li class="toO">O</li>
+                <li class="toP">P</li>
+                <li class="toQ">Q</li>
+                <li class="toR">R</li>
+                <li class="toS">S</li>
+                <li class="toT">T</li>
+                <li class="toU">U</li>
+                <li class="toV">V</li>
+                <li class="toW">W</li>
+                <li class="toX">X</li>
+                <li class="toY">Y</li>
+                <li class="toZ">Z</li>
+                <li>#</li>
+            </ul>
+    	</div>
+	</div>
+	<div role="tabpanel" class="tab-pane" id="frequency">
+        <ul class="contacts-inner-list contacts-list-2"></ul>
+    </div>
+	<div role="tabpanel" class="tab-pane" id="datemet">
+        <ul class="contacts-inner-list contacts-list-2"></ul>   
+    </div>
+</main>
+
+
+<nav class="main-nav">
+	<ul>
+		<li><a href="home_1.html" class="nav-my-cards">My cards</a></li>
+        <li><a href="contacts.html" class="nav-contacts actived">Contacts</a></li>
+        <li><a href="receive.html" class="nav-receiving">Receiving</a></li>
+        <li><a href="nearby.html" class="nav-nearby">Nearby</a></li>
+	</ul>
+</nav>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets/js/jquery.min.js"><\/script>')</script>
+<script src="dist/js/bootstrap.min.js"></script>
+<script src="dist/js/hammer.min.js"></script>
+<script src="dist/js/jquery.ui.touch-punch.min.js"></script>
+<script src="assets/js/index.js"></script>
+<script src="assets/js/contact.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+<script src="assets/js/handle-contact-firebase.js"></script>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>intouch</title>
+	
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="apple-mobile-web-app-title" content="intouch">
+	<link rel="apple-touch-icon" href="assets/images/intouch_logo.png">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="favicon.ico"> -->
+
+	<link rel="stylesheet" href="dist/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="dist/css/bootstrap-theme.min.css">
+
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	
+</head>
+<body class="main-gray">
+
+<header class="main-header header-gray">
+	<h2>My cards</h2>
+	<a href="#" class="btn-header-right btn-setting"><img src="assets/images/app/btn-setting.png" alt="btn-setting"></a>
+</header>
+<main class="main-content main-gray home-content">
+
+	<div class="main-card work" id="main-card" card-value="work" data-id="0" style="display: block;">
+	<!-- change photo / gradient color -->
+		<img class="avatar" src="upload/avatar/lillie/work.png" alt="work">
+		<div class="card-info">
+			<div class="card-info-click">
+				<h3 class="owner-name">Lillie Cole</h3>
+				<ul class="card-info-mycards">
+					<li class="occupation">Photographer</li>
+					<li class="company">White Room</li>
+				</ul>
+			</div>
+			
+			<a href="share_card.html" class="btn-share"><img src="assets/images/app/btn-share.png" alt="share">Share</a>
+		</div>
+	</div>
+	<div class="main-card add tmpCard"  style="display: none;">
+	<!-- change photo / gradient color -->
+		<div class="card-info">
+			<h3 class="owner-name">intouch</h3>
+			<ul class="card-info-mycards">
+				<li class="intro">Life-management app</li>
+			</ul>
+			<a href="new_card.html" class="btn-share">Build your first card</a>
+		</div>
+	</div>
+	<div class="cards main-gray">
+		<ul>
+			<li data-value="work">Work</li>
+			<li data-value="friend">Friend</li>
+			<li data-value="add">+</li>
+		</ul>
+	</div>
+</main>
+<nav class="main-nav">
+	<ul>
+		<li><a href="home_1.html" class="nav-my-cards actived">My cards</a></li>
+		<li><a href="contacts.html" class="nav-contacts">Contacts</a></li>
+		<li><a href="receive.html" class="nav-receiving">Receiving</a></li>
+		<li><a href="nearby.html" class="nav-nearby">Nearby</a></li>
+	</ul>
+</nav>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets/js/jquery.min.js"><\/script>')</script>
+<script src="dist/js/bootstrap.min.js"></script>
+<script src="dist/js/hammer.min.js"></script>
+<script src="dist/js/hammer-time.min.js"></script>
+<script src="assets/js/handle-hammer.js"></script>
+<script src="assets/js/index.js"></script>
+</html>

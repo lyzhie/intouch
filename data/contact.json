@@ -1,0 +1,318 @@
+{"contact": [
+	{
+		"name": "A",
+		"data": [
+			{
+				"name": "Allie Carson",
+				"group": ["client"],
+				"avatar": "allicec"
+
+			},
+			{
+				"name": "Aki Tsang",
+				"group": ["client"],
+				"avatar": "akit"
+
+			},
+			{
+				"name": "Andy Vanhoose",
+				"group": ["favorites","bff"],
+				"avatar": "andyv"
+
+			},
+			{
+				"name": "Asenath Mayo",
+				"group": ["friend"],
+				"avatar": "asenathm"
+			}
+		]
+	},
+	{
+		"name": "B",
+		"data": [
+			{
+				"name": "Bailee Campbell",
+				"group": ["client"],
+				"avatar": "baileec"
+
+			},
+			{
+				"name": "Bailey Guiterrez",
+				"group": ["favorites","model"],
+				"avatar": "baileyg"
+
+			},
+			{
+				"name": "Ben Owens",
+				"group": ["friend"],
+				"avatar": "beno"
+			},
+			{
+				"name": "Bennie Barrett",
+				"group": ["model"],
+				"avatar": "bennieb"
+			},
+			{
+				"name": "Blair Hartman",
+				"group": ["model"],
+				"avatar": "blairh"
+			}
+		]
+	},
+	{
+		"name": "C",
+		"data": [
+			{
+				"name": "Cassandra",
+				"group": ["model"],
+				"avatar": "fake"
+			
+			},
+			{
+				"name": "Corky",
+				"group": ["model"],
+				"avatar": "fake"
+			
+			},
+			{
+				"name": "Cicero",
+				"group": ["model"],
+				"avatar": "fake"
+			
+			},
+			{
+				"name": "Cecilia",
+				"group": ["model"],
+				"avatar": "fake"
+			
+			},
+			{
+				"name": "Cook",
+				"group": ["model"],
+				"avatar": "fake"
+			
+			}
+		]
+	},
+	{
+		"name": "D",
+		"data": [
+			{
+				"name": "Dianna",
+				"group": ["model"],
+				"avatar": "fake"
+			}
+		]
+	},
+	{
+		"name": "E",
+		"data": [
+			{
+				"name": "Eve",
+				"group": ["model"],
+				"avatar": "fake"
+			}
+		]
+	},
+	{
+		"name": "F",
+		"data": [
+			{
+				"name": "Fiona",
+				"group": ["model"],
+				"avatar": "fake"
+			}
+		]
+	},
+	{
+		"name": "G",
+		"data": [
+			{
+				"name": "Gregory",
+				"group": ["model"],
+				"avatar": "fake"
+			}
+		]
+	},
+	{
+		"name": "H",
+		"data": [
+			{
+				"name": "Homer",
+				"group": ["model"],
+				"avatar": "fake"
+			}
+		]
+	},
+	{
+		"name": "J",
+		"data": [
+			{
+				"name": "Jaina",
+				"group": ["model"],
+				"avatar": "fake"
+			}
+		]
+	},
+	{
+		"name": "K",
+		"data": [
+			{
+				"name": "Kostas",
+				"group": ["model"],
+				"avatar": "fake"
+			}
+		]
+	},
+	{
+		"name": "L",
+		"data": [
+			{
+				"name": "Lea",
+				"group": ["model"],
+				"avatar": "fake"
+			}
+		]
+	},
+	{
+		"name": "M",
+		"data": [
+			{
+				"name": "Michael",
+				"group": ["model"],
+				"avatar": "fake"
+			}
+		]
+	},
+	{
+		"name": "N",
+		"data": [
+			{
+				"name": "Nick",
+				"group": ["model"],
+				"avatar": "fake"
+			}
+		]
+	},
+	{
+		"name": "O",
+		"data": [
+			{
+				"name": "Oratio",
+				"group": ["model"],
+				"avatar": "fake"
+			}
+		]
+	},
+	{
+		"name": "P",
+		"data": [
+			{
+				"name": "Peter",
+				"group": ["model"],
+				"avatar": "fake"
+			}
+		]
+	},
+	{
+		"name": "Q",
+		"data": [
+			{
+				"name": "Qubert",
+				"group": ["model"],
+				"avatar": "fake"
+			}
+		]
+	},
+	{
+		"name": "R",
+		"data": [
+			{
+				"name": "Roxanne",
+				"group": ["model"],
+				"avatar": "fake"
+			}
+		]
+	},
+	{
+		"name": "S",
+		"data": [
+			{
+				"name": "Steve",
+				"group": ["model"],
+				"avatar": "fake"
+			}
+		]
+	},
+	{
+		"name": "T",
+		"data": [
+			{
+				"name": "Timo",
+				"group": ["model"],
+				"avatar": "fake"
+			}
+		]
+	},
+	{
+		"name": "U",
+		"data": [
+			{
+				"name": "Ursula",
+				"group": ["model"],
+				"avatar": "fake"
+			}
+		]
+	},
+	{
+		"name": "V",
+		"data": [
+			{
+				"name": "Vendetta",
+				"group": ["model"],
+				"avatar": "fake"
+			}
+		]
+	},
+	{
+		"name": "W",
+		"data": [
+			{
+				"name": "Warpath",
+				"group": ["model"],
+				"avatar": "fake"
+			}
+		]
+	},
+	{
+		"name": "X",
+		"data": [
+			{
+				"name": "Xena",
+				"group": ["model"],
+				"avatar": "fake"
+			}
+		]
+	},
+	{
+		"name": "Y",
+		"data": [
+			{
+				"name": "Yrelia",
+				"group": ["model"],
+				"avatar": "fake"
+			}
+		]
+	}, {
+		"name": "Z",
+		"data": [
+			{
+				"name": "Zoltan",
+				"group": ["model"],
+				"avatar": "fake"
+			}
+		]
+	}
+]
+}
+	
