@@ -9,6 +9,7 @@
   };
   firebase.initializeApp(config);
 
+  // connect databse by ref()
   var database = firebase.database();
   firebase.database().ref('/contact').once('value').then(function(snapshot) {
 
@@ -22,7 +23,6 @@
     for(var j=0;j<item.data.length;j++) {
       var innerItem = item.data[j];
       var htmlcontent = '<li class="list-item list-item-' + innerItem.avatar +'"><a href="' + innerItem.avatar + '.html">';
-      // $(elem).append('<li class="list-item">');
       for (var k = 0;k<innerItem.group.length; k++) {
         var tmpitem = innerItem.group[k];
         htmlcontent += '<img class="group-pic" src="assets/images/contact/group/'+tmpitem+'.png" alt="'+tmpitem+'">';
@@ -45,7 +45,6 @@
     for(var j=0;j<item.data.length;j++) {
       var innerItem = item.data[j];
       var htmlcontent = '<li class="list-item list-item-' + innerItem.avatar +'"><a href="' + innerItem.avatar + '.html">';
-      // $(elem).append('<li class="list-item">');
       for (var k = 0;k<innerItem.group.length; k++) {
         var tmpitem = innerItem.group[k];
         htmlcontent += '<img class="group-pic" src="assets/images/contact/group/'+tmpitem+'.png" alt="'+tmpitem+'">';
@@ -68,7 +67,6 @@
     for(var j=0;j<item.data.length;j++) {
       var innerItem = item.data[j];
       var htmlcontent = '<li class="list-item list-item-' + innerItem.avatar +'"><a href="' + innerItem.avatar + '.html">';
-      // $(elem).append('<li class="list-item">');
       for (var k = 0;k<innerItem.group.length; k++) {
         var tmpitem = innerItem.group[k];
         htmlcontent += '<img class="group-pic" src="assets/images/contact/group/'+tmpitem+'.png" alt="'+tmpitem+'">';

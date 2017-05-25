@@ -3,7 +3,7 @@ $(document).ready(function(){
   contactScroll();
 });
 
-
+// swipe group
 function swipeGroup(){
   var mc = new Hammer( $( ".contacts-list" )[ 0 ], {
       domEvents: true,
@@ -12,6 +12,8 @@ function swipeGroup(){
 
     mc.get('swipe').set({ direction: Hammer.DIRECTION_HORIZONTAL });
     mc.get('pan').set({ direction: Hammer.DIRECTION_HORIZONTAL });
+
+    //calc swipe value
     var swipeWidth = $('.swipe-group').width();
     $('.swipe-group').on('swipeleft panleft', function(event){
       $('.contacts-list-main').animate({'margin-left': -swipeWidth+20},100);
@@ -28,14 +30,18 @@ function swipeGroup(){
   
 }
 
+
 function contactScroll(){
   $(".alphabet-list li").click(function(){
       var toLetter = $(this).attr('class');
       console.log(toLetter);
       var offset = $('#'+toLetter).offset();
+      // get offest
+
       console.log(offset);
            $('html, body').animate({
             scrollTop: offset.top-92
         }, 500);
+      // scroll top: offset top
     })
 }

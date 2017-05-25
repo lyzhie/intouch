@@ -1,6 +1,6 @@
 (function() {
 
-    loginTimeer();
+    loginTimer();
 	triggerInput();
 	cardClick();
 	// btnBack();
@@ -9,7 +9,7 @@
 	btnDropdown();
 })();
 
-function loginTimeer(){
+function loginTimer(){
   var timeoutID = window.setTimeout(function(){
       $("div.slogan").addClass("hide");
       $(".login-option").removeClass("hide").addClass("show");
@@ -82,7 +82,6 @@ function cardClick(){
 
 function btnBack(){
 	$('.btn-back').click(function(event) {
-		/* Act on the event */
 		window.history.back();
 	});
 }

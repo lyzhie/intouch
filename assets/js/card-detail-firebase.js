@@ -11,16 +11,19 @@
 
   var database = firebase.database();
 
+  // get url
+
   $.urlParam = function(name){
 	var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
 	return results[1] || 0;
   }
 
+  // get cardId, id from url
+
   var cardId = $.urlParam("card");
   var id = $.urlParam("id");
 
-  // console.log(name);console.log(id);
-  
+  // link database
   firebase.database().ref('/user/'+id).once('value').then(function(snapshot) {
 
     var user = snapshot.val();
@@ -28,6 +31,7 @@
     var cardVal = user.card[cardId];
     console.log(cardVal);
 
+    // get avatar, name, occupation, company
     $('.owner-avatar').attr({
     	'src': 'upload/avatar/'+ user.avatar[cardVal.avatar],
     	'alt': user.firstname + ' ' + user.lastname
@@ -54,7 +58,6 @@
 				}
 			};
 		});
-
 	};
 	if(user.social&&cardVal.social){
 		$('.cards-detail-list').append('<li class="divide-line"></li>');
@@ -65,8 +68,6 @@
 					$('.cards-detail-list').append('<li><a href=\"' + value.link +'\"><span>' + key + '</span><div><img src=\"' + value.icon + '\" alt=\"' + key + '\"><p>' + value.name + '</p></div></a></li>');
 				}
 			};
-
-			
 		});
 	}
   

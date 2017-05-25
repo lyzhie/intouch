@@ -1,5 +1,5 @@
 (function() {
-
+	// scroll to get val
 	$(document).on('input change', '.color-slider', function() {
 	    var tmpVal = $('.color-slider').val();
 	    console.log(Math.floor(tmpVal/10));

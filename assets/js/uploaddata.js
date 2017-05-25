@@ -4,6 +4,7 @@
   clickNext();
 })();
 
+//getLocalData
 function getLocalData(){
   var name = localStorage.getItem("Intouch_User_Name");
   var nameArray = name.split(/[ ,]+/);
@@ -18,7 +19,7 @@ function getLocalData(){
 }
 
 
-
+// simulate submit
 function clickSubmit(argument) {
 	// body...
 	$('.input-upload-file').bind("change keyup", function(event) {
@@ -53,12 +54,7 @@ function clickSubmit(argument) {
     });
   }
 
-
-
-  // var userId = Math.floor((Math.random() * 1000) + 5);
-  
-  
-
+  // next and upload data
   function clickNext(){
     $('#submit-form').click(function(event) {
       /* Act on the event */

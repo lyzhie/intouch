@@ -1,6 +1,6 @@
 (function() {
 
-     var tmpHeight = $('.main-card').innerHeight();
+    var tmpHeight = $('.main-card').innerHeight();
     $('.main-card .avatar ').height(tmpHeight);
 
     cardClick();
